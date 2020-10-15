@@ -139,7 +139,7 @@ while running:
         if enemyX[i] <= 0:
             enemyX_change[i] = 3
             enemyY[i] += enemyY_change[i]
-        elif enemyX[i] >= 736:
+        elif enemyX[i] >= 735:
             enemyX_change[i] = -3
             enemyY[i] += enemyY_change[i]
 
@@ -151,7 +151,7 @@ while running:
             bulletY = 480
             bullet_state = "ready"
             score_value += 1
-            enemyX[i] = random.randint(0, 736)
+            enemyX[i] = random.randint(0, 735)
             enemyY[i] = random.randint(50, 150)
 
         enemy(enemyX[i], enemyY[i], i)
